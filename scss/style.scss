@@ -1,0 +1,364 @@
+$first-color: #f2f7a1;
+$secondary-color:#071952;
+$third-color:#088395;
+
+
+
+
+html {
+    font-size: 10px;
+    
+}
+  
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    color: $first-color;
+    background-color:$secondary-color;
+    min-width: 320px;
+    
+
+}
+/* Nav menu  */
+.logo{
+    font-size: 4rem;
+    border: 0.2rem solid $secondary-color;
+    padding: 0.5rem;
+    color: $secondary-color;
+}
+
+.header-nav{
+    width:100%;
+    position: fixed;
+    z-index: 1;
+    padding: 0.5rem;
+}
+
+.items{
+    text-transform: uppercase;
+    font-size: 2rem;
+    
+}
+
+.items li a{
+    color: $secondary-color;
+
+}
+
+
+/*Header*/
+
+.bg-image{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url(../assets/img/grossgasteiger.jpg);
+  background: {
+    repeat:no-repeat;
+    size:cover;
+  }
+  
+  height: calc(100vh);
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+
+.h1-text{
+    z-index: 3;
+    color: $first-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    h1 {
+        font-size: 4.5rem;
+        letter-spacing: 10px;
+      }
+    p{
+        font-size: 1.75rem;
+        letter-spacing: 5px;
+    }
+}
+
+
+/* Bio section */
+
+
+.my-bio-section{
+  min-height: 400px;
+  display: flex;
+  margin: 6rem 2rem;
+}
+
+.bio-text{
+  width: 50%;
+}
+
+.bio-image{
+    width: 44%;
+    
+}
+.my-bio h2{
+  text-align: center;
+}
+.my-bio h2,
+.my-portfolio h2,
+.form-container h2{
+  
+    font-size: 3.5rem;
+    font-weight: 400px;
+    margin-bottom: 6rem;
+}
+
+.text-p{
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left:3rem ;
+}
+
+
+/*
+.btn-container{
+    margin-top: 30px;
+  }
+
+.btn-style {
+    color: $first-color;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    border: 2px solid $third-color;
+    box-shadow: 2px 2px 6px rgba(106, 54, 158, 0.4);
+    margin: 0.5rem;
+  }
+*/
+  /* Portfolio section */
+.my-portfolio{
+  text-align: center;
+}
+.my-portfolio-section {
+  margin: 10rem 2rem;
+}
+
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+
+.project-image img{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  
+  }
+
+ 
+
+.single-project{
+    position: relative;
+    height: 250px;
+    width: 28%;
+    margin: 1rem ;
+
+  }
+ .project-image{
+    width: 100%;
+    position: absolute;
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  /* Portfolio content */
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s all ease;
+    transform: scale(1);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .content:hover {
+    opacity: 40;
+    background-color: #ca222233;
+  }
+  
+  
+  .content h3 {
+    padding-top: 50px;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color:$secondary-color;
+  }
+  
+  .sub {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+
+  /*Footer*/
+
+  .form-container{
+    text-align: center;
+  }
+
+
+  
+  form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .form__input {
+    border: none;
+    background: none;
+    color: $third-color;
+    border-bottom: 1px solid $third-color;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  
+  
+  textarea.form__input {
+    border: 1px solid $third-color;
+    height: 225px;
+    overflow: hidden;
+  }
+
+  button{
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0.5rem;
+    border: 2px solid $third-color;
+    box-shadow: 2px 2px 6px rgba(106, 54, 158, 0.4);
+    background-color: $secondary-color;
+    color: $first-color;
+
+  }
+
+
+  
+  footer{
+    text-align: center;
+    margin: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .footer-nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-nav a {
+    color:$first-color;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+ 
+
+  .copyright{
+    color: $first-color;
+  }
+
+
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1.5rem;
+    color: $first-color;
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    background-position: center center;
+  }
+  
+  .facebook-icon {
+    background-image: url(/assets/img/facebook.svg);
+    
+  }
+  
+  .linkedin-icon {
+    background-image: url(/assets/img/linkedin-in.svg);
+  }
+  
+  .github-icon {
+    background-image: url(/assets/img/github.svg);
+   
+  }
+
+
+
+  /* Media Querys */
+
+  @media screen and (max-width: 768px) {
+    
+    .project-image img{
+      height: 150px;
+
+    }
+    .single-project{
+    
+      height: 150px;
+    }
+    .my-bio-section{
+      flex-wrap: wrap;
+    }
+    .bio-text{
+      width: 100%;
+      text-align: center;
+    }
+    
+    .bio-image{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+  }
+  @media screen and (max-width: 576px){
+    .project-container{
+      
+      flex-direction: column;
+    }
+    .single-project{
+      
+      width: 100%;
+      height: 300px;
+      margin: .2rem;
+     }
+    .project-image img{
+      height: 300px;
+     }
+  }
+  
+  
+
+ 
+
